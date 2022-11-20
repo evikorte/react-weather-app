@@ -1,22 +1,23 @@
 import "./App.css";
+import Weather from "./Weather";
 
 export default function App() {
   return (
-    <div className="App text-center">
-      <div className="container">
-        <h1>Weather App</h1>
-        <footer>
-          Coded by
-          <a
-            href="https://github.com/evikorte/react-weather-app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            evikorte
-          </a>
-        </footer>
+    <div className="App">
+      <div className="container card w-50">
+        <Weather />
       </div>
+      <footer className="text-center">
+        Coded by
+        <a
+          href="https://github.com/evikorte/react-weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          evikorte
+        </a>
+      </footer>{" "}
     </div>
   );
 }
