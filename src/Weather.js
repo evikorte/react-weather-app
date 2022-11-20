@@ -28,9 +28,9 @@ export default function Weather() {
           </ul>{" "}
         </div>
       </div>
-      <form className="SearchEngine">
+      <form className="SearchEngine mb-3">
         <input type="search" placeholder="Enter a city" />
-        <input type="submit" value="Search" />
+        <input type="submit" className="btn btn-primary" value="Search" />
       </form>
     </div>
   );
