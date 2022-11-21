@@ -30,8 +30,16 @@ export default function Weather() {
       </div>
 
       <form className="SearchEngine m-3">
-        <input type="search" placeholder="Enter a city" />
-        <input type="submit" className="btn btn-primary" value="Search" />
+        <input
+          type="search"
+          className="form-control col-6"
+          placeholder="Enter a city"
+        />
+        <input
+          type="submit"
+          className="btn btn-primary col-3 m-2"
+          value="Search"
+        />
       </form>
     </div>
   );

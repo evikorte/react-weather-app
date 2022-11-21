@@ -4,7 +4,7 @@ import Weather from "./Weather";
 export default function App() {
   return (
     <div className="App">
-      <div className="container card mt-5">
+      <div className="container">
         <Weather />
       </div>
       <footer className="text-center">
