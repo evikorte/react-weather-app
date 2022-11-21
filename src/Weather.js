@@ -11,14 +11,14 @@ export default function Weather() {
           <li>Partly Cloudy</li>
         </ul>
       </header>
-      <div className="row">
+      <div className="row text-center">
         <div className="col-6">
           <img
             className="img-fluid w-25"
             src="https://cdn.onlinewebfonts.com/svg/img_540017.png"
             alt="weather icon"
           />{" "}
-          10°C
+          <strong>10</strong> °C|°F
         </div>
         <div className="col-6">
           <ul>
@@ -34,6 +34,7 @@ export default function Weather() {
           type="search"
           className="form-control col-6"
           placeholder="Enter a city"
+          autoFocus="on"
         />
         <input
           type="submit"
