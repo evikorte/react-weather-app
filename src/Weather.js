@@ -15,7 +15,7 @@ export default function Weather() {
         <div className="col-6">
           <img
             className="img-fluid w-25"
-            src="https://cdn3.iconfinder.com/data/icons/climate-iconset/40/Partly_Cloudy-1024.png"
+            src="https://cdn.onlinewebfonts.com/svg/img_540017.png"
             alt="weather icon"
           />{" "}
           10°C
@@ -28,7 +28,8 @@ export default function Weather() {
           </ul>{" "}
         </div>
       </div>
-      <form className="SearchEngine mb-3">
+
+      <form className="SearchEngine m-3">
         <input type="search" placeholder="Enter a city" />
         <input type="submit" className="btn btn-primary" value="Search" />
       </form>
