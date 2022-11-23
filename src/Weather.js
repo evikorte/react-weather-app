@@ -3,11 +3,11 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-  const [loaded, setLoaded] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ loaded: false });
 
   function handleResponse(response) {
     setWeatherData({
+      loaded: true,
       temperature: response.data.main.temp,
       date: "Sunday, 18:28",
       city: response.data.name,
@@ -17,10 +17,9 @@ export default function Weather() {
       humidity: response.data.main.humidity,
       iconUrl: `https://cdn.onlinewebfonts.com/svg/img_540017.png`,
     });
-    setLoaded(true);
   }
 
-  if (loaded) {
+  if (weatherData.loaded) {
     return (
       <div ClassName="Weather">
         <header>
