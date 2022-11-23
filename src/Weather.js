@@ -18,7 +18,7 @@ export default function Weather() {
             src="https://cdn.onlinewebfonts.com/svg/img_540017.png"
             alt="weather icon"
           />{" "}
-          <strong>10</strong> °C|°F
+          <strong>10</strong> <p className="units">°C|°F</p>
         </div>
         <div className="col-6">
           <ul>
