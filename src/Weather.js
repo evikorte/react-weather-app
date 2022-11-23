@@ -9,6 +9,7 @@ export default function Weather() {
   function handleResponse(response) {
     setWeatherData({
       temperature: response.data.main.temp,
+      date: "Sunday, 18:28",
       city: response.data.name,
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
@@ -25,7 +26,7 @@ export default function Weather() {
         <header>
           <h1>{weatherData.city}</h1>
           <ul>
-            <li>Sunday, 18:28</li>
+            <li>{weatherData.date}</li>
             <li className="text-capitalize">{weatherData.description}</li>
           </ul>
         </header>
