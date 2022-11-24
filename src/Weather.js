@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import CurrentDate from "./CurrentDate";
 import "./Weather.css";
 
 export default function Weather() {
@@ -9,7 +10,7 @@ export default function Weather() {
     setWeatherData({
       loaded: true,
       temperature: response.data.main.temp,
-      date: "Sunday, 18:28",
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
@@ -25,7 +26,9 @@ export default function Weather() {
         <header>
           <h1>{weatherData.city}</h1>
           <ul>
-            <li>{weatherData.date}</li>
+            <li>
+              <CurrentDate date={weatherData.date} />
+            </li>
             <li className="text-capitalize">{weatherData.description}</li>
           </ul>
         </header>
