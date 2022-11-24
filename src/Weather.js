@@ -22,7 +22,7 @@ export default function Weather() {
 
   if (weatherData.loaded) {
     return (
-      <div ClassName="Weather">
+      <div className="Weather">
         <header>
           <h1>{weatherData.city}</h1>
           <ul>
