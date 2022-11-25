@@ -16,7 +16,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
-      iconUrl: `https://cdn.onlinewebfonts.com/svg/img_540017.png`,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
   function handleSubmit(event) {
