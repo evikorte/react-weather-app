@@ -15,7 +15,7 @@ export default function WeatherInfo(props) {
           <li className="text-capitalize">{props.data.description}</li>
         </ul>
       </header>
-      <div className="row text-center">
+      <div className="row ps-4">
         <div className="col-6">
           <div className="clearfix">
             <span className="weatherIcon">
