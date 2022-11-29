@@ -4,9 +4,11 @@ strong {
   vertical-align: middle;
 }
 
-.units {
-  font-size: 20px;
+.Weather canvas {
+  vertical-align: middle;
+}
+
+.Weather .units {
   position: relative;
-  top: -70px;
-  right: -100px;
+  top: -15px;
 }
