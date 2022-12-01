@@ -12,14 +12,14 @@ export default function WeatherForecastDay(props) {
   }
 
   function day() {
-    let date = new Date(props.date.dt * 1000);
+    let date = new Date(props.data.dt * 1000);
     let day = date.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     return days[day];
   }
 
   return (
-    <div className="WeatherForecastDay">
+    <div className="WeatherForecastDay text-center mb-3">
       <div className="day">{day()}</div>
       <div className="icon">
         <WeatherIcon code={props.data.weather[0].icon} size={35} />
