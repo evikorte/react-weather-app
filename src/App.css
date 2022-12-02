@@ -1,6 +1,7 @@
 .App {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+  text-shadow: 1px 1px beige;
   border: 1px solid lightgray;
   border-radius: 10px;
   margin: 0 auto;
